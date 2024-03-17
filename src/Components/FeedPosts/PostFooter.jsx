@@ -2,7 +2,7 @@ import { Box, Button, Flex, Input, InputGroup, InputRightElement, Text } from '@
 import React, { useState } from 'react'
 import { NotificationsLogo, UnlikeLogo, CommentLogo } from "../../assets/constants.jsx";
 
-const PostFooter = ({username}) => {
+const PostFooter = ({username,isProfilePage}) => {
     const[isLiked,setIsLiked]=useState(false)
     const[nbLikes,setnbLikes]=useState(1000)
     const handleLike = () =>{
@@ -16,7 +16,7 @@ const PostFooter = ({username}) => {
         }
     }
   return (
-    <Box mb={4}>
+    <Box mb={4} marginTop={'auto'}>
         {/*Like and Comment Row*/}
         <Flex alignItems={'center'} gap={4} w={'full'} pt={0} mb={2} mt={4}>
             <Box onClick={handleLike} cursor={'pointer'} fontSize={18}>
@@ -28,11 +28,13 @@ const PostFooter = ({username}) => {
         </Flex>
         {/*Number of Likes*/}
         <Text fontSize={'sm'} fontWeight={600}> {nbLikes} likes</Text>
-        <Text fontSize={'sm'} fontWeight={700}>
+        {!isProfilePage && (<>
+            <Text fontSize={'sm'} fontWeight={700}>
             {username} {' '}
             <Text as='span' fontWeight={400}> Feeling Good</Text>
         </Text>
         <Text fontSize={'sm'} color={'gray'}>View All 1000 comments</Text>
+        </>)}
         {/*Comment Input*/}
         <Flex alignItems={'center'} gap={2} justifyContent={'space-between'} w={'full'}>
             <InputGroup>
