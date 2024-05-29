@@ -28,7 +28,7 @@ const AuthForm = () => {
       </Box>
       <Box border={'1px solid gray'} borderRadius={4} padding={5}>
         <Flex alignItems={'center'} justifyContent={'center'}>
-          <Box mx={2} fontsize={14}>
+          <Box mx={2} fontSize={14}>
             {isLogin ? "Don't have an account?" : "Already have an account?"}
           </Box>
           <Box color={'blue.500'} cursor={'pointer'} onClick={()=>setIsLogin(!isLogin)}>
