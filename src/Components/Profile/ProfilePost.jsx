@@ -2,7 +2,7 @@ import { Flex, GridItem, Image, Text , useDisclosure,  ModalOverlay, ModalConten
 import { AiFillHeart } from 'react-icons/ai'
 import { FaComment } from 'react-icons/fa'
 import { MdDelete } from 'react-icons/md'
-import Comment from "../Comment"
+import Comment from "../Comment/Comment"
 import PostFooter from "../FeedPosts/PostFooter"
 
 const ProfilePost = ({img}) => {

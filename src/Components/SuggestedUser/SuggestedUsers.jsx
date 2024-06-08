@@ -9,8 +9,8 @@ const SuggestedUsers = () => {
       <SuggestedHeader/>
 
       <Flex alignItems={'center'} justifyContent={'space-between'} w={'full'}>
-        <Text fontsize={12} fontWeight={'bold'} color={'gray.500'}> Suggested for you</Text>
-        <Text fontsize={12} fontWeight={'bold'} _hover={{color:'gray.500'}} cursor={'pointer'}> See All </Text>
+        <Text fontSize={12} fontWeight={'bold'} color={'gray.500'}> Suggested for you</Text>
+        <Text fontSize={12} fontWeight={'bold'} _hover={{color:'gray.500'}} cursor={'pointer'}> See All </Text>
       </Flex>
 
       <SuggestedUser name='Dan abrahmov' followers={1392} avatar='https://thediffpodcast.com/assets/images/dan-a-8d7a6d9e454582e77444d6d332035f60.png'/>

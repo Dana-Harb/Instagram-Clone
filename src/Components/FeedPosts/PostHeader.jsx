@@ -1,5 +1,5 @@
 import { Avatar, Box, Flex, Text } from '@chakra-ui/react'
-import React from 'react'
+
 
 const PostHeader = ({username,avatar}) => {
   return (
@@ -15,7 +15,7 @@ const PostHeader = ({username,avatar}) => {
             </Flex>
             {/*Unfollow button*/}
             <Box cursor={'pointer'}>
-                <Text fontsize={12} color={"blue.500"} fontWeight={'bold'} _hover={{color:'white',}} transition={'0.2 ease-in-out'}>Unfollow</Text>
+                <Text fontSize={12} color={"blue.500"} fontWeight={'bold'} _hover={{color:'white',}} transition={'0.2 ease-in-out'}>Unfollow</Text>
             </Box>
         </Flex>
     </>
